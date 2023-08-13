@@ -32,7 +32,7 @@ export default function Galeria() {
 
     return (
         <div className="gal-home">
-            <h1>Galeria</h1>
+            <h1 className="titulo-galeria">Galeria</h1>
 
             <div className="galeria">
                 {

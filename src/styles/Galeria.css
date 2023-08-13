@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
 .gal-home{
     display: flex;
     width: 100%;
@@ -23,4 +25,9 @@
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
     width: 50%;
+}
+
+.titulo-galeria{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px
 }
