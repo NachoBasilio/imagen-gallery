@@ -13,7 +13,7 @@
 
 .contenedor-imagen{
     width: 500px;
-    height: 100%;
+    height: 400px;
     margin: 5px;
     position: relative;
 }
@@ -57,7 +57,7 @@ svg{
     color: #000000;
     font-size: 15px;
     font-family: 'Nunito Sans', sans-serif;
-    background-color: #838383;
+    background-color: #8383838a;
     padding-left: 10px;
     padding-right: 10px;
     -webkit-border-top-right-radius: 100px;

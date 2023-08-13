@@ -15,5 +15,5 @@ export default function GaleriaImg({imagen, handleFavorito}) {
 
 GaleriaImg.propTypes = {
     imagen: PropTypes.object.isRequired,
-    handleFavorito: PropTypes.func.isRequired
+    handleFavorito: PropTypes.func
 }

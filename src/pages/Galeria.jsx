@@ -1,19 +1,17 @@
 
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import GaleriaImg from "../components/GaleriaImg"
 import useFetch from "../hooks/useFetch"
-import PropTypes from "prop-types"
+
 import "../styles/Galeria.css"
+import UserContext from "../context/UserContext";
 
 
 
-export default function Galeria({
-    state,
-    dispatch
-}) {
+export default function Galeria() {
     const { imagenes, getImagenes } = useFetch()
 
-
+    const { state, dispatch } = useContext(UserContext)
 
 
     console.log(state)
@@ -57,7 +55,3 @@ export default function Galeria({
     )
 }
 
-Galeria.propTypes = {
-    state: PropTypes.object.isRequired,
-    dispatch: PropTypes.func.isRequired
-}
