@@ -1,8 +1,9 @@
-import { NavLink,Routes,Route  } from "react-router-dom";
+import {Routes,Route  } from "react-router-dom";
 import Favoritos from "./pages/Favoritos";
 import Galeria from "./pages/Galeria"
 import Home from "./pages/Home";
 import UserProvider from "./context/UserProvider";
+import Header from "./components/Header";
 
 
 function App() {
@@ -11,16 +12,7 @@ function App() {
 
   return (
     <UserProvider>
-      <header>
-        <h1>Galeria de Fotos</h1>
-        <ul>
-          <li>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/galeria">Galeria</NavLink>
-            <NavLink to="/favoritos">Favoritos</NavLink>
-          </li>
-        </ul>
-      </header>
+      <Header></Header>
 
       <Routes>
         <Route path="/" element={<Home />} />
