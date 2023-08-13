@@ -19,7 +19,6 @@ export default function Imagen({imagen, handleFavorito, handlerEliminar}) {
                 <button className='boton-x' onClick={
                   
                   () => {
-                    console.log(imagen.id)
                     handlerEliminar(imagen.id)
                    }
                 }>

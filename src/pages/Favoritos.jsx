@@ -5,11 +5,10 @@ import GaleriaImg from "../components/GaleriaImg";
 
 export default function Favoritos() {
   const { state, dispatch } = useContext(UserContext);
-  const imagenes = state.favoritos;
+  const imagenes = state.favoritos || [];
+
 
   const handlerEliminar = (id) => {
-    console.log(id)
-    console.log(state.favoritos)
     dispatch({
       type: "REMOVE_FAVORITO",
       payload: id,

@@ -14,7 +14,7 @@ export default function Galeria() {
     const { state, dispatch } = useContext(UserContext)
 
 
-    console.log(state)
+
 
     const handleFavorito = (imagen) => {
         dispatch({

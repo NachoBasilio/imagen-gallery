@@ -4,13 +4,19 @@ import galeriaReducer from '../galeriaReducer'
 import { useReducer } from 'react'
 
 
+const init = () => {
+    console.log(JSON.parse(localStorage.getItem('favoritos')))
+    return JSON.parse(localStorage.getItem('favoritos')) || {
+        favoritos: []
+    }
 
+}
 
 
 export default function UserProvider({children}) {
-    const [state, dispatch] = useReducer(galeriaReducer, {
-        favoritos: [],
-    })
+
+    const [state, dispatch] = useReducer(galeriaReducer,{favoritos: []},init);
+    console.log(state)
 
   return (
     <UserContext.Provider value={{
