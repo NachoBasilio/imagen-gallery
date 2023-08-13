@@ -12,6 +12,11 @@ const galeriaReducer = (state, action) => {
             ...state,
             favoritos: [...state.favoritos, action.payload]
         };
+      case 'REMOVE_FAVORITO':
+        return {
+            ...state,
+            favoritos: state.favoritos.filter(favorito => favorito.id !== action.payload)
+        };
       default:
         return state;
     }

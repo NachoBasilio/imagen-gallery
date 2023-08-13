@@ -9,7 +9,7 @@ import { useReducer } from 'react'
 
 export default function UserProvider({children}) {
     const [state, dispatch] = useReducer(galeriaReducer, {
-        favoritos: []
+        favoritos: [],
     })
 
   return (
