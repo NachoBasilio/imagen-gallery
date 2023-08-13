@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 .contenedor-imagen{
@@ -16,12 +16,18 @@
     height: 400px;
     margin: 5px;
     position: relative;
+    transition: all 0.7s ease;
+}
+.contenedor-imagen:hover{
+    transform: scale(1.02);
+    z-index: 1;
 }
 
 img{
     width: 100%;
     height: 100%;
 }
+
 
 svg{
     width: 30px;   
@@ -66,4 +72,4 @@ svg{
     -moz-border-radius-bottomright: 100px;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
-    }
+}
