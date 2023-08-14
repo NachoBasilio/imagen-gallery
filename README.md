@@ -1,8 +1,13 @@
-# React + Vite
+# Galería de Imágenes con React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene un proyecto de Galería de Imágenes desarrollado con React, donde se utiliza `react-router-dom` para la navegación, `useReducer` y `useContext` para la gestión del estado de las imágenes favoritas, y `localStorage` para almacenar las imágenes seleccionadas como favoritas.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Navegación entre diferentes categorías de imágenes.
+- Visualización de imágenes en una interfaz intuitiva y amigable.
+- Posibilidad de marcar imágenes como favoritas y guardarlas en la memoria local.
+- Utilización de `useReducer` y `useContext` para gestionar las imágenes favoritas de manera eficiente.
+- Almacenamiento persistente de las imágenes favoritas mediante `localStorage`.
+
+
