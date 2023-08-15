@@ -5,7 +5,6 @@ import { useReducer } from 'react'
 
 
 const init = () => {
-    console.log(JSON.parse(localStorage.getItem('favoritos')))
     return JSON.parse(localStorage.getItem('favoritos')) || {
         favoritos: []
     }
