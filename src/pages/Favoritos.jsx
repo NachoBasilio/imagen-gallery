@@ -5,14 +5,19 @@ import GaleriaImg from "../components/GaleriaImg";
 
 export default function Favoritos() {
   const { state, dispatch } = useContext(UserContext);
-  const imagenes = state.favoritos || [];
+  const imagenes = state.favoritos;
+  console.log(imagenes);
 
 
   const handlerEliminar = (id) => {
+    const arrayFiltrado = imagenes.filter((imagen) => imagen.id !== id);
+    localStorage.setItem('favoritos', JSON.stringify({favoritos: arrayFiltrado}));
+
     dispatch({
       type: "REMOVE_FAVORITO",
-      payload: id,
+      payload: arrayFiltrado,
     });
+    
   };
 
 
@@ -21,9 +26,13 @@ export default function Favoritos() {
       <h1 className="contenedor-home titulo">Favorito</h1>
       <div className="galeria">
                 {
-                  imagenes.length == 0 ? <p>No hay imagenes</p> : imagenes.map((imagen) => (
-                    <GaleriaImg key={imagen.id} imagen={imagen} handlerEliminar={handlerEliminar} />
-                  ))
+                    imagenes && imagenes.map((imagen) => (
+                        <GaleriaImg
+                            key={imagen.id}
+                            imagen={imagen}
+                            handlerEliminar={handlerEliminar}
+                        />
+                    ))
                 }
       </div>
     </div>

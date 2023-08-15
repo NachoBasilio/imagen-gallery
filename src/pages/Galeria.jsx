@@ -17,6 +17,11 @@ export default function Galeria() {
 
 
     const handleFavorito = (imagen) => {
+        if (state.favoritos.find(favorito => favorito.id === imagen.id)) {
+            return
+        }
+        localStorage.setItem('favoritos', JSON.stringify([...state.favoritos, imagen]));
+        
         dispatch({
             type: "ADD_FAVORITO",
             payload: imagen

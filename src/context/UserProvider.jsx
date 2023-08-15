@@ -8,7 +8,6 @@ const init = () => {
     return JSON.parse(localStorage.getItem('favoritos')) || {
         favoritos: []
     }
-
 }
 
 
