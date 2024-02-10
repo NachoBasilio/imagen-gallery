@@ -1,6 +1,6 @@
-# Galería de Imágenes con React
+# Galería de Imágenes con React (Proyecto a mejorar)
 
-Este repositorio contiene un proyecto de Galería de Imágenes desarrollado con React, donde se utiliza `react-router-dom` para la navegación, `useReducer` y `useContext` para la gestión del estado de las imágenes favoritas, y `localStorage` para almacenar las imágenes seleccionadas como favoritas.
+Este repositorio contiene un proyecto de Galería de Imágenes desarrollado con React, donde se utiliza `react-router-dom` para la navegación, `useReducer` y `useContext` para la gestión del estado de las imágenes favoritas, y `localStorage` para almacenar las imágenes seleccionadas como favoritas. 
 
 ## Características
 
